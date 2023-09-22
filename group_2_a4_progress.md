@@ -3,8 +3,8 @@ Our project will be broken up into three "layers": foreground, midground, and ba
 
 # Descriptions of objects
 ## Foreground (Tarun)
+The foreground will have a road with a car on it. The car will consist of the body and the wheels, where the body will have the doors, door handles, windows, and headlights. The car will be moving across the screen from the left to the right, and the wheels will be rotating as the car is moving. I am considering adding more vehicles to the screen or making it so that as the car leaves a screen a new colored car enters the screen.
 
-{insert stuff here}
 ## Midground (Jeffrey)
 The art for randomly generated clouds is still up in the air but it will be semi-adapted off the following code: https://github.com/simon-tiger/rain/tree/master/RainCloud. I'm considering adding random lightning strikes or changing cloud shapes but still unsure about how to implement those two. The clouds will translate over the screen from right to left (same direction as the sun). 
 
