@@ -35,10 +35,7 @@ size (float): how large is the circle
 radius_of_motion (float): the radius of the arc that the sun/moon will travel on
 start_loc (float, default = 0): The starting location of the object
 ```
-This object will be set on a pre-determined path. I am planning to implement 4 alternating suns and moons that are 90 apart and only one or two (max) objects will be displayed. The rest will still be stored and moving, but will be outside of the window, until they get to frame. 
-
-## Sun/Moon 
-```python
+This object will be set on a pre-determined path. I am planning to implement 4 alternating suns and moons that are 90 apart and only one or two (max) objects will be displayed. The rest will still be stored and moving, but will be outside of the window, until they get to frame. For translation, I will use the pos, speed, radius_of_motion and start_loc to implament it. I will also use the triangle method to create a triangle that I will put on the edge of the sun at equal intervals and they will be rotating around the main body of the sun. This will be done internally and will not have user input.
 
 
-```
+
