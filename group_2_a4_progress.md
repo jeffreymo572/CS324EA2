@@ -35,7 +35,16 @@ size (float): how large is the circle
 radius_of_motion (float): the radius of the arc that the sun/moon will travel on
 start_loc (float, default = 0): The starting location of the object
 ```
-This object will be set on a pre-determined path. I am planning to implement 4 alternating suns and moons that are 90 apart and only one or two (max) objects will be displayed. The rest will still be stored and moving, but will be outside of the window, until they get to frame. For translation, I will use the pos, speed, radius_of_motion and start_loc to implament it. I will also use the triangle method to create a triangle that I will put on the edge of the sun at equal intervals and they will be rotating around the main body of the sun. This will be done internally and will not have user input.
+This object will be set on a pre-determined path. I am planning to implement 4 alternating suns and moons that are 90 apart and only one or two (max) objects will be displayed. The rest will still be stored and moving, but will be outside of the window, until they get to frame. For translation, I will use the pos, speed, radius_of_motion and start_loc to implement it. I will also use the triangle method to create a triangle that I will put on the edge of the sun at equal intervals and they will be rotating around the main body of the sun. This will be done internally and will not have user input.
 
+## Car
+The car class will have the following parameters:
+
+```python
+pos (PVector): x,y center of the car
+speed (float, default = 1): How fast the car is moving per frame (how many pixels)
+start_loc (float, default = 0): The starting location of the object
+```
+The object will be going in a straight line across the screen. I will use the different geometry methods to create the different components of the vehicle, and then use the circle method to create wheels that will rotate as the car moves across the screen. Then once the car reaches the end of the screen, a new car with a different color will  start driving onto the screen. There will be no user input. 
 
 
