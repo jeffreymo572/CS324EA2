@@ -30,4 +30,10 @@ class Cloud{
     circles[3] = new Circle(position.x+(w/6*3)-10, position.y+h/2, 10+random(10));
     circles[4] = new Circle(position.x+w/2, position.y+(h/3*3)+8, h/4*3+random(6));
   }
+  
+  void spawnDrop(){
+    Droplet d = new Droplet();
+    d.position = PVector.add(position, new PVector(random(-65, 65), random(15, 20)));
+    
+  }
 }
