@@ -48,20 +48,20 @@ class Cloud {
   }
 
   void spawnDrop() {
-    if (!(drops.size() >= this.rainIntensity*10)){
-      Drop d = new Drop();
-      d.hvelocity = cloudSpeed;
-      d.position = PVector.add(this.position, new PVector(random(-65, 65), random(15, 20)));
-      d.push();
-      drops.add(d);
+    if (drops.size() >= this.rainIntensity*10){
+      drops.remove(0);
     }
+    Drop d = new Drop();
+    d.hvelocity = cloudSpeed;
+    d.position = PVector.add(this.position, new PVector(random(-65, 65), random(15, 20)));
+    d.push();
+    drops.add(d);
   }
 
   void drawDrops() {
     // If drop is off screen, do not continue rendering them
     for (Drop d : drops) {
       if (d.offScreen() && spawning) {
-        spawning = false;
         break;
       }
     }
