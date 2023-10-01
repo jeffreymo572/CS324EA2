@@ -1,10 +1,11 @@
-class Droplet{
+class Drop {
   PVector position;
   float velocity;
+  float hvelocity;
   float gravity;
-  Droplet originalState;
+  Drop originalState;
   
-  Droplet() {
+  Drop() {
     position = new PVector();
     velocity = 0;
     gravity = 0.3;
@@ -14,21 +15,24 @@ class Droplet{
     if (position.y > height) {
       return true;
     }
-    
     return false;
   }
   
   void push() {
-    originalState = new Droplet();
+    originalState = new Drop();
     originalState.position = position.copy();
     originalState.velocity = velocity;
   }
   
   void update() {
+    position.x += hvelocity;
     position.y += velocity;
     velocity += gravity;
+    if (position.x > width){
+      position.x = position.x;
+    }
     if (originalState != null && position.y > height) {
-      position = originalState.position.copy();
+      position.y = originalState.position.y;
       velocity = originalState.velocity;
     }
   }
