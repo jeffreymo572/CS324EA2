@@ -1,0 +1,10 @@
+Our group split the 2d animation into 3 parts: background, middle ground, and foreground. Yawer was in charge of the background, Jeffrey was in charge of the middle ground, and Tarun was in charge of the foreground.
+
+Here is the breakdown of the animation in each part:
+
+	* Background (Yawer): The background has a sun and moon pair that alternate. The sun has triangles equidistant around its circumference that would rotate, and the sun and moon would translate along a Bezier curve in the sky. The color of the background also changes as they move across the sky using the "lerpcolor" function. A difficulty I had was to set up the lerpcolor to be a smooth transition between day, night, and sunrise.
+
+	* Middle ground (Jeffrey):
+
+	* Foreground (Tarun): 
+	
