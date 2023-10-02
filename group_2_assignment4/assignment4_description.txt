@@ -2,7 +2,7 @@ Our group split the 2d animation into 3 parts: background, middle ground, and fo
 
 Here is the breakdown of the animation in each part:
 
-	* Background (Yawer): The background has a sun and moon pair that alternate. The sun has triangles equidistant around its circumference that would rotate, and the sun and moon would translate along a Bezier curve in the sky. The color of the background also changes as they move across the sky using the "lerpcolor" function. A difficulty I had was to set up the lerpcolor to be a smooth transition between day, night, and sunrise.
+	* Background (Yawer): The background has a sun and moon pair that alternate. The sun has triangles equidistant around its circumference that would rotate, and the sun and moon would translate along a Bezier curve in the sky. The color of the background also changes as they move across the sky using the "lerpcolor" function. A difficulty I had was to set up the lerpcolor to be a smooth transition between day, night, and sunrise. This is all controlled through the sun_moon Class. 
 
 	* Middle ground (Jeffrey):
 
